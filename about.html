@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Portfolio</title>
+  <meta name="keywords" content="HTML,CSS,JavaScript,SQL,jQuery,Web development,GIS,Python,Tweepy,R,SPSS,Spatial Analysis,ArcGIS,Oracle,Geomatics,MapInfo,Postgres,PostGIS,Big Data">
+  <meta name="description" content="Portfolio">
+  <meta name="author" content="K F">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <style>
+	:root {
+    	--highlight-color: #c46863;
+    }
+  </style>
+  <link rel="icon" href="https://dl.dropbox.com/s/dq87atac2febf0v/me.ico?dl=0" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Duru+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">
+</head>
+<script>
+// This function is used to change the name shown in the browser tab
+	document.title = "About"
+</script>
+<script>
+// This function is used to remove sticky button hover states on mobiles
+	function fix(){
+	    var el = this;
+	    var par = el.parentNode;
+	    var next = el.nextSibling;
+	    par.removeChild(el);
+	    setTimeout(function() {par.insertBefore(el, next);}, 0)
+	}
+</script>
+<script>
+// This function is used to add the sticky class to our navbar so it sticks when scrolling down
+	$(document).ready(function(){ 
+		var navTop = $("navbar").offset().top;
+		
+		var stickyNav = function(){
+		  if ($(window).scrollTop() >= navTop){
+		    $("navbar").addClass("sticky");
+		    $("border-top").addClass("sticky");
+		  } else {
+		    $("navbar").removeClass("sticky");
+		    $("border-top").removeClass("sticky");
+		  }
+		};
+		
+		stickyNav();
+		
+		$(window).scroll(function(){
+			stickyNav();
+		});
+	});
+</script>
+<script>
+	$(document).ready(function(){
+	  $("#up").hide();
+	  $(window).scroll(function() {
+	    if($(window).scrollTop() > 300) {
+	      $("#logo").fadeOut();
+	      $("#up").fadeIn();
+	    } else {
+	      $("#up").fadeOut();
+	      $("#logo").fadeIn();
+	    }
+	  });
+	  $('#up, #logo').click(function(){ 
+	        $("html, body").animate({ scrollTop: 0 }, 600); 
+	        return false; 
+	  });
+	});
+</script>
+<script>
+// This function is control the carousel slides
+    $(document).ready(function(){
+    	$(".slideimage").hide();
+    	$(".aboutcontainer").mouseenter(function(){
+    		$(".slideimage").show();
+	        $(".single-item").slick({
+				useTransform: true,
+				cssEase: 'ease-in',
+			    arrows: false,
+			    autoplay: true, 
+	    		autoplaySpeed: 3000
+			});
+	    });
+    });
+</script>
+<body>
+	
+<header>
+    <nav id="navbar">
+        <a href="index.html" class="fld-c-main-nav__item">Portfolio</a>
+        <a href="" class="fld-c-main-nav__item     fld-is-active">About</a>
+        <!--<a href="about.html" class="navimage">FI<br>TZ</a>-->
+        <div id="navright">
+	        <a href="#"><img src="images/fitzred.png" class="navimage" id="logo" width="35px" height="50px"></a><br>
+			<a href="#"><span id="up">&#8593;</span></a>
+		</div>
+    </nav>
+</header>
+
+<div class="border-top"> </div>
+<div class="border-left"> </div>
+<div class="border-right"> </div>
+
+<div id="bio" class="aboutcontainer">
+	<div id="biobox1" class="aboutarticle">
+		<div id="headingtext">
+			<img src="images/me3.png" class="headimage" width="80px" height="80px">
+			<h2>Hey there, I'm Kevin. I'm a Data Scientist and Location Intelligence Specialist with Canadian roots.</h2>
+		</div>
+		<div class="scrollarrow">
+			<div class="arrowdown">&#8595;</div>
+		</div>
+	</div>
+</div>
+<div class="aboutcontainer">
+	<div id="aboutbox1" class="aboutarticle">
+		<div class="text">
+			  <div class='slides'>
+				  <div class='single-item'>
+				    <div class="firstimage"><img src="images/ML.png" id="ML" width="70px" height="70px"></div>
+				    <div class="slideimage"><img src="images/appcolour.png" width="70px" height="70px"></div>
+				    <div class="slideimage"><img src="images/hadoop.png" id="hadoop" width="100px" height="90px"></div>
+				    <div class="slideimage"><img src="images/Rlogo.png" id="R" width="60px" height="60px"></div>
+				  </div>
+			  </div>
+			<!--<div><img src="images/bigdatacustomlight.png" width="120px" height="120px"></div>-->
+			<h2>Data Analytics and Machine Learning</h2>
+			<div class="mainline"><hr /></div>
+			<p>Classification algorithms, sentiment analysis, predictive modeling, and neural networks, are 
+				just a few of many tools that I utilize to extract meaningful results from data and solve problems that really matter.
+				That includes yours.
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="aboutcontainer">
+	<div id="aboutbox2" class="aboutarticle">
+		<div class="text">
+			<div class='slides'>
+				  <div class='single-item'>
+				  	<div class="firstimage"><img src="images/code.png" width="70px" height="70px"></div>
+				    <div class="slideimage"><img src="images/javascript.png" width="70px" height="70px"></div>
+				    <div class="slideimage"><img src="images/postgres.png" id="postgres" width="70px" height="70px"></div>
+				    <div class="slideimage"><img src="images/php.png" width="70px" height="70px"></div>
+				  </div>
+			</div>
+			<!--<img src="images/scriptcustomlight.png" class="headimage" width="120px" height="120px">-->
+			<h2>Database and Web Development</h2>
+			<div class="mainline"><hr /></div>
+			<p>Developing databases, warehouses, and queries is part of my day-to-day, and needless to say I love what I do.
+				Not only will I develop your database, I'll also have it talking fluently to your new custom website.
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="aboutcontainer">
+	<div id="aboutbox3" class="aboutarticle">
+		<div class="text">
+			<div class='slides'>
+				  <div class='single-item'>
+				    <div class="firstimage"><img src="images/globe.png" width="70px" height="70px"></div>
+				    <div class="slideimage"><img src="images/esri.png" id="esri" width="70px" height="70px"></div>
+				    <div class="slideimage"><img src="images/tableau.png" width="70px" height="70px"></div>
+				    <div class="slideimage"><img src="images/powerbi.png" id="power" width="70px" height="70px"></div> 
+				  </div>
+			  </div>
+			  <!--<img src="images/giscustomlight.png" class="headimage" width="120px" height="120px">-->
+			<h2>GIS and Data Visualization</h2>
+			<div class="mainline"><hr /></div>
+			<p>	Maps and visuals are a passion of mine. Whether it's online interactive maps or simple maps portraying complex analytics, I'll take your data from point A to point B
+			and effectively convey the spatial insights your company depends on.</p>
+		</div>
+	</div>
+</div>
+
+<br>
+<footer class="contact">
+	<div class="mail"><br>
+		<a href="mailto:kevin.fitzgerald@hotmail.ca?Subject=General%20Inquiry"><img src="images/mailboxcustomlight.png" class="mailbox" height="42" width="42"></a>
+    </div>
+    <br><br><br><br>
+  	<div class="copyright">
+  		<p>Kevin Fitzgerald &copy; 2018</p>
+  	</div>
+</footer>
+<br>
+</body>
+</html>

@@ -100,12 +100,7 @@ header {
 	margin-right: 5px;
 }
 #headingtext {
-	font-family:'Hammersmith One', Helvetica,arial,sans-serif;
-    color: #8fbac7;
-    line-height: 1.8em;
-    font-size: 20px;
     text-align: center;
-    letter-spacing: 1px;
     margin-top: 100px;
 	margin-left: 60px;
 	margin-right: 60px;
@@ -313,7 +308,7 @@ header {
 	padding-right: 5px;
 	letter-spacing: 0.10em;
 	font-family:'Raleway', sans-serif;
-    color: #2d396e;
+    color: black;
     font-weight: bold;
     line-height: 1.6;
     text-align: center;
@@ -344,7 +339,7 @@ header {
     font-size: 22px;
 }
 .aboutcontainer p {
-	color: #2d396e;
+	color: black;
 	font-family: 'karbon',Helvetica,arial,sans-serif;
 	font-size: 18px;
 	line-height: 2;

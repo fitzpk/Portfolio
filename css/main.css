@@ -19,6 +19,7 @@ body{
 .border-left,
 .border-right {
   height: 98.2%; /*percentage is necessary to become flush with bottom-border */
+  height: 668px;
   width: 8px;
   top: 4px;
   bottom: 4px;

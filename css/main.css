@@ -512,8 +512,7 @@ header {
     position: relative;
 }
 .copyright {
-	/*color: #545454;*/
-	color: #2d396e;
+	color: black;
 	text-align: middle;
 }
 .mail {

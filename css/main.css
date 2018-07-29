@@ -666,7 +666,7 @@ header {
 	}
 }
 @media screen and (max-width: 450px) {
-	/*Used in github
+	/*
 	.flex-container {
 		padding-left: 10px;
 	}
@@ -685,7 +685,7 @@ header {
 	#aboutbox1, #aboutbox2, #aboutbox3 {
 	  	position: relative;
 	  	max-height: 470px;
-	  	margin-bottom: 60px;
+	  	margin-bottom: 70px;
 	}
 	#linkbox1 {
 	  	position: relative;

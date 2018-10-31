@@ -1,6 +1,6 @@
 body{
-	background-color: #fae5d0;
-	border-bottom: #b5b8a3 solid 8px;
+	background-color: #efefef;
+	border-bottom: white solid 6px;
 	/*Border-bottom is used instead of border-bottom div because this anchors to the bottom better*/
 }
 /*Surrounding Border */
@@ -8,11 +8,11 @@ body{
 .border-left,
 .border-right {
   position: fixed;
-  background: #b5b8a3;
+  background: white;
   z-index: 30;
 }
 .border-top{
-  height: 8px;
+  height: 6px;
   left: 4px;
   right: 4px;
 }
@@ -40,7 +40,7 @@ header {
 	width: 100%; 
 	left: 6px; right: 0; top: 0; 
 	padding: 10px 5px 5px 5px; 
-	background-color: #fae5d0; 
+	background-color: #efefef; 
 }
 .fld-c-main-nav__item { display: inline-block; padding: 18px 0 4px 0; margin-top: 5px; margin-bottom: 5px; margin-right: 0.6em; margin-left: 1em; font-family:'nord-med',Helvetica,arial,sans-serif; font-size: 18px; font-weight: 600; text-decoration: none; color: #1d1d1b; border-bottom: 1px solid transparent; transition: color .3s ease-out, border-color .5s ease-out; }
 .fld-c-main-nav__item:hover { color: #615f9b; color: var(--highlight-color); }
@@ -204,7 +204,7 @@ header {
     text-align: center;
 }
 #linkbox1 {
-	background-color: rgba(181,184,163, 1);
+	background-color: rgba(145,175,164,1);
   	position: relative;
   	height: 440px;
   	width: 440px;
@@ -216,7 +216,7 @@ header {
   	width: 440px;
 }
 #linkbox3 {
-   	background-color: rgba(143,186,199,0.7);
+   	background-color: rgba(127,169,189,1);
    	position: relative;
   	height: 440px;
   	width: 440px;
@@ -228,19 +228,19 @@ header {
   	width: 440px;
 }
 #linkbox5 {
-  	background-color: rgba(181,184,163, 1);
+  	background-color: rgba(145,175,164,1);
   	position: relative;
   	height: 440px;
   	width: 440px;
 }
 #linkbox6 {
-	background-color: rgba(143,186,199,0.7);
+	background-color: rgba(127,169,189,1);
   	position: relative;
   	height: 440px;
   	width: 440px;
 }
 #linkbox7 {
-	background-color: rgba(181,184,163, 1);
+	background-color: rgba(145,175,164,1);
   	position: relative;
   	height: 440px;
   	width: 440px;
@@ -252,7 +252,7 @@ header {
   	width: 440px;
 }
 #linkbox9 {
-	background-color: rgba(143,186,199,0.7);
+	background-color: rgba(127,169,189,1);
   	position: relative;
   	height: 440px;
   	width: 440px;
@@ -475,32 +475,31 @@ header {
 	transition:transform 0.3s cubic-bezier(0.175, 0.885, 0.62, 1.275) 
 }
 #linkbox1:hover {
-	background-color: rgba(181,184,163, 0.8);
+	background-color: rgba(145,175,164,0.8);
 }
 #linkbox2:hover {
 	background-color:rgba(132,134,134, 0.5);
 }
 #linkbox3:hover {
-	background-color: rgba(45,57,110,0.7);
-	background-color: rgba(143,186,199,0.6);
+	background-color: rgba(127,169,189,0.8);
 }
 #linkbox4:hover {
 	background-color:rgba(132,134,134, 0.5);
 }
 #linkbox5:hover {
-	background-color: rgba(181,184,163, 0.8);
+	background-color: rgba(145,175,164,0.8);
 }
 #linkbox6:hover {
-	background-color: rgba(143,186,199,0.6);
+	background-color: rgba(127,169,189,0.8);
 }
 #linkbox7:hover {
-	background-color: rgba(181,184,163, 0.8);
+	background-color: rgba(145,175,164,0.8);
 }
 #linkbox8:hover {
 	background-color:rgba(132,134,134,0.5);
 }
 #linkbox9:hover {
-	background-color: rgba(143,186,199,0.6);
+	background-color: rgba(127,169,189,0.8);
 }
 .contact {
 	color: black;

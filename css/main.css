@@ -189,7 +189,7 @@ header {
 	margin-right: 5px;
 }
 /*Need this to locate the first container below header */
-#container1 {
+#container0 {
 	margin-top: 80px;
 }
 .article {
@@ -328,7 +328,7 @@ header {
     text-align: left;
     font-size: 22px;
 }
-#container2 h2, #container4 h2, #container6 h2 {
+#container0 h2, #container2 h2, #container4 h2, #container6 h2 {
 	padding-left: 5px;
 	padding-right: 5px;
 	letter-spacing: 0.10em;
@@ -354,7 +354,7 @@ header {
 	padding-left: 12px;
 	padding-right: 80px;
 }
-#container2 p, #container4 p, #container6 p{
+#container0 p, #container2 p, #container4 p, #container6 p{
 	font-family: 'karbon',Helvetica,arial,sans-serif;
 	font-size: 15px;
 	line-height: 2;
@@ -666,7 +666,7 @@ header {
 	.aboutcontainer {
 		padding-left: 10px;
 	}*/
-	#container1 h2, #container2 h2, #container3 h2, #container4 h2, #container5 h2, #container6 h2{
+	#container0 h2, #container1 h2, #container2 h2, #container3 h2, #container4 h2, #container5 h2, #container6 h2{
 		font-size: 18px;
 	}
 	#biobox1 {

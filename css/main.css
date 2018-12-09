@@ -198,7 +198,7 @@ header {
 	-moz-box-shadow: 0 2px 5px 2px rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
 	box-shadow: 0 2px 5px 2px rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
 }
-#linkbox1, #linkbox2, #linkbox3, #linkbox4, #linkbox5, #linkbox6, #linkbox7, #linkbox8, #linkbox9, #biobox1 {
+#linkbox 0, #linkbox1, #linkbox2, #linkbox3, #linkbox4, #linkbox5, #linkbox6, #linkbox7, #linkbox8, #linkbox9, #biobox1 {
 	-webkit-flex: 1 0 0;
     flex: 1 0 0;
     text-align: center;
@@ -215,7 +215,7 @@ header {
   	height: 440px;
   	width: 440px;
 }
-#linkbox3 {
+#linkbox0, #linkbox3 {
    	background-color: rgba(127,169,189,1);
    	position: relative;
   	height: 440px;
@@ -266,7 +266,7 @@ header {
 	margin-left: 240px;
 	opacity: 0.3;
 }
-#linkbox3 img {
+#linkbox0 img, #linkbox3 img {
 	position: relative;
 	margin-top: 200px;
 	margin-left: 280px;
@@ -458,21 +458,24 @@ header {
 	transform:scaleY(1) scaleX(1) scale3D(1.04, 1.04, 1) translateX(-5px) translateY(8px);
 	transition:transform 0.3s cubic-bezier(0.175, 0.885, 0.62, 1.275) 
 }
-#linkbox3:hover .text h2, #linkbox6:hover .text h2, #linkbox9:hover .text h2{
+#linkbox0:hover .text h2, #linkbox3:hover .text h2, #linkbox6:hover .text h2, #linkbox9:hover .text h2{
 	transform:scaleY(1) scaleX(1) translateZ(0) translateY(-3px);
 	transition:transform 0.3s cubic-bezier(0.175, 0.885, 0.62, 1.275) 
 }
-#linkbox3:hover .text hr, #linkbox6:hover .text hr, #linkbox9:hover .text hr{
+#linkbox0:hover .text hr, #linkbox3:hover .text hr, #linkbox6:hover .text hr, #linkbox9:hover .text hr{
 	transform:scaleY(1) scaleX(1.2) translateZ(0);
 	transition:transform 0.3s cubic-bezier(0.175, 0.885, 0.62, 1.275) 
 }
-#linkbox3:hover .text p, #linkbox6:hover .text p, #linkbox9:hover .text p{
+#linkbox0:hover .text p, #linkbox3:hover .text p, #linkbox6:hover .text p, #linkbox9:hover .text p{
 	transform:scaleY(1) scaleX(1) translateZ(0) translateY(3px);
 	transition:transform 0.3s cubic-bezier(0.175, 0.885, 0.62, 1.275)
 }
-#linkbox3:hover img, #linkbox6:hover img, #linkbox9:hover img{
+#linkbox0:hover img, #linkbox3:hover img, #linkbox6:hover img, #linkbox9:hover img{
 	transform:scaleY(1) scaleX(1) scale3D(1.04, 1.04, 1) translateX(-5px) translateY(8px);
 	transition:transform 0.3s cubic-bezier(0.175, 0.885, 0.62, 1.275) 
+}
+#linkbox0:hover {
+	background-color: rgba(127,169,189,0.8);
 }
 #linkbox1:hover {
 	background-color: rgba(145,175,164,0.8);
@@ -542,13 +545,13 @@ header {
 	   	height: 500px;
 	   	max-height: 500px;	
 	}
-	#linkbox1 img, #linkbox2 img, #linkbox3 img, #linkbox4 img, #linkbox5 img, #linkbox7 img, #linkbox8 img, #linkbox9 img {
+	#linkbox0 img, #linkbox1 img, #linkbox2 img, #linkbox3 img, #linkbox4 img, #linkbox5 img, #linkbox7 img, #linkbox8 img, #linkbox9 img {
 		padding-right: 50px;
 		margin-top: 250px;
 		margin-right: -20px;
 		opacity: 0.3;
 	}
-	#linkbox3, #linkbox6, #linkbox9 {
+	#linkbox0, #linkbox3, #linkbox6, #linkbox9 {
 	  	position: relative;
 	   	height: 500px;
 	   	max-height: 500px;	
@@ -615,7 +618,7 @@ header {
 		height:120px;
 		opacity: 0.3;
 	}
-	#linkbox3 img, #linkbox6 img, #linkbox9 img {
+	#linkbox0 img, #linkbox3 img, #linkbox6 img, #linkbox9 img {
 		margin-left: 200px;
 		width:120px;
 		height:120px;
@@ -625,7 +628,7 @@ header {
 		margin-left: 180px;
 		margin-top: 280px;
 	}
-	#linkbox3 {
+	#linkbox0, #linkbox3 {
 	  	position: relative;
 	  	max-height: 470px;
 	}
@@ -695,14 +698,14 @@ header {
 		height:100px;
 		opacity: 0.3;
 	}
-	#linkbox3 img, #linkbox6 img, #linkbox9 img {
+	#linkbox0 img, #linkbox3 img, #linkbox6 img, #linkbox9 img {
 		margin-left: 190px;
 		margin-top: 300px;
 		width:100px;
 		height:100px;
 		opacity: 0.3;
 	}
-	#linkbox3 {
+	#linkbox0, #linkbox3 {
 	  	position: relative;
 	  	max-height: 470px;
 	}

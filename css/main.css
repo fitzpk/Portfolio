@@ -35,12 +35,12 @@ body{
 /*--------------------------*/
 /*Navbar*/
 header {
-	z-index: 30; 
+	z-index: 30;
 	position: fixed;
-	width: 100%; 
-	left: 6px; right: 0; top: 0; 
-	padding: 10px 5px 5px 5px; 
-	background-color: #efefef; 
+	width: 100%;
+	left: 6px; right: 0; top: 0;
+	padding: 10px 5px 5px 5px;
+	background-color: #efefef;
 }
 .fld-c-main-nav__item { display: inline-block; padding: 18px 0 4px 0; margin-top: 5px; margin-bottom: 5px; margin-right: 0.6em; margin-left: 1em; font-family:'nord-med',Helvetica,arial,sans-serif; font-size: 18px; font-weight: 600; text-decoration: none; color: #1d1d1b; border-bottom: 1px solid transparent; transition: color .3s ease-out, border-color .5s ease-out; }
 .fld-c-main-nav__item:hover { color: #615f9b; color: var(--highlight-color); }
@@ -92,12 +92,32 @@ header {
 /*About Page Styles*/
 .aboutcontainer {
     display: -webkit-flex;
-    display: flex;  
+    display: flex;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
 	flex: auto;
 	margin-left: 5px;
 	margin-right: 5px;
+}
+.aboutcontainer h2 {
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	letter-spacing: 0.10em;
+	font-family:'Raleway', sans-serif;
+    color: black;
+    font-weight: bold;
+    line-height: 1.6;
+    text-align: center;
+    font-size: 22px;
+}
+.aboutcontainer p {
+	color: black;
+	font-family: 'karbon',Helvetica,arial,sans-serif;
+	font-size: 18px;
+	line-height: 2;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 #headingtext {
     text-align: center;
@@ -115,6 +135,15 @@ header {
   	-webkit-flex: 1 0 0;
     flex: 1 0 0;
     text-align: center;
+}
+#biobox1 {
+	-webkit-flex: 1 0 0;
+    flex: 1 0 0;
+    text-align: center;
+}
+#biobox1 h2 {
+	color: #c46863;
+	font-size: 30px;
 }
 #bio {
 	height: 95vh;
@@ -177,122 +206,79 @@ header {
 	75% {transform: rotateY(0deg) translate(0px, 15px); opacity: 1;}
 	100% {transform: rotateY(0deg) translate(0px, 0px); opacity: 1;}
 }
+
+
+
+
+
+
 /*---------------------------------------------*/
 /*Portfolio Page Styles*/
-.flex-container {
+.flex-container-dual, .flex-container-wide {
     display: -webkit-flex;
-    display: flex;  
+    display: flex;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
-	flex: auto;
-	margin-left: 5px;
-	margin-right: 5px;
+		flex: auto;
+		margin-left: 5px;
+		margin-right: 5px;
 }
-/*Need this to locate the first container below header */
+
 #container0 {
 	margin-top: 80px;
 }
-.article {
+
+.article-dual, .article-wide {
 	margin: 8px 8px;
 	-webkit-box-shadow: 0 2px 5px 2px rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
 	-moz-box-shadow: 0 2px 5px 2px rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
 	box-shadow: 0 2px 5px 2px rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
-}
-#linkbox1, #linkbox2, #linkbox3, #linkbox4, #linkbox5, #linkbox6, #linkbox7, #linkbox8, #linkbox9, #biobox1 {
 	-webkit-flex: 1 0 0;
-    flex: 1 0 0;
-    text-align: center;
+	flex: 1 0 0;
+	text-align: center;
+	position: relative;
+	height: 440px;
+	width: 440px;
 }
-#linkbox1 {
+
+#linkbox1, #linkbox5, #linkbox7, #linkbox11 {
 	background-color: rgba(145,175,164,1);
-  	position: relative;
-  	height: 440px;
-  	width: 440px;
 }
-#linkbox2 {
-  	background-color: rgba(132,134,134, 0.6);
-  	position: relative;
-  	height: 440px;
-  	width: 440px;
+#linkbox2, #linkbox4, #linkbox8, #linkbox10 {
+  	background-color: rgba(202,199,179, 1);
 }
-#linkbox3 {
-   	background-color: rgba(127,169,189,1);
-   	position: relative;
-  	height: 440px;
-  	width: 440px;
+#linkbox3, #linkbox6, #linkbox9, #linkbox12 {
+   	background-color: rgba(178,204,204,1);
 }
-#linkbox4 {
-  	background-color: rgba(132,134,134, 0.6);
-  	position: relative;
-  	height: 440px;
-  	width: 440px;
-}
-#linkbox5 {
-  	background-color: rgba(145,175,164,1);
-  	position: relative;
-  	height: 440px;
-  	width: 440px;
-}
-#linkbox6 {
-	background-color: rgba(127,169,189,1);
-  	position: relative;
-  	height: 440px;
-  	width: 440px;
-}
-#linkbox7 {
-	background-color: rgba(145,175,164,1);
-  	position: relative;
-  	height: 440px;
-  	width: 440px;
-}
-#linkbox8 {
-	background-color: rgba(132,134,134, 0.6);
-  	position: relative;
-  	height: 440px;
-  	width: 440px;
-}
-#linkbox9 {
-	background-color: rgba(127,169,189,1);
-  	position: relative;
-  	height: 440px;
-  	width: 440px;
-}
+
 #aboutbox1 img, #aboutbox2 img, #aboutbox3 img {
 	position: relative;
 }
-#linkbox1 img, #linkbox2 img, #linkbox4 img, #linkbox5 img, #linkbox7 img, #linkbox8 img {
+.article-dual img {
 	position: relative;
 	margin-top: 200px;
 	margin-left: 240px;
 	opacity: 0.3;
 }
-#linkbox3 img {
+.article-wide img {
 	position: relative;
 	margin-top: 200px;
-	margin-left: 280px;
-	opacity: 0.3;
-}
-#linkbox6 img {
-	position: relative;
-	margin-top: 200px;
-	margin-left: 280px;
-	opacity: 0.3;
-}
-#linkbox9 img {
-	position: relative;
-	margin-top: 230px;
 	margin-left: 280px;
 	opacity: 0.3;
 }
 .twinrow hr {
-	border: solid 2.5px #c46863;
+	border: solid 1.5px #656a6b;
+	color: #656a6b;
+	background-color: #656a6b;
 	margin-left: 10px;
 	border-radius: 2px;
 	align: left;
 	width: 20%;
 }
 .singlerow hr {
-	border: solid 2.5px #c46863;
+	border: solid 1.5px #656a6b;
+	color: #656a6b;
+	background-color: #656a6b;
 	border-radius: 2px;
 	align: center;
 	width:20%;
@@ -302,23 +288,7 @@ header {
 	align: center;
 	width:60%;
 }
-.aboutcontainer h2 {
-	padding-top: 5px;
-	padding-left: 5px;
-	padding-right: 5px;
-	letter-spacing: 0.10em;
-	font-family:'Raleway', sans-serif;
-    color: black;
-    font-weight: bold;
-    line-height: 1.6;
-    text-align: center;
-    font-size: 22px;
-}
-#biobox1 h2 {
-	color: #c46863;
-	font-size: 30px;
-}
-#container1 h2, #container3 h2, #container5 h2 {
+.flex-container-dual h2 {
 	padding-left: 12px;
 	padding-right: 80px;
 	letter-spacing: 0.10em;
@@ -328,7 +298,7 @@ header {
     text-align: left;
     font-size: 22px;
 }
-#container0 h2, #container2 h2, #container4 h2, #container6 h2 {
+.flex-container-wide h2 {
 	padding-left: 5px;
 	padding-right: 5px;
 	letter-spacing: 0.10em;
@@ -338,15 +308,7 @@ header {
     text-align: center;
     font-size: 22px;
 }
-.aboutcontainer p {
-	color: black;
-	font-family: 'karbon',Helvetica,arial,sans-serif;
-	font-size: 18px;
-	line-height: 2;
-	padding-left: 100px;
-	padding-right: 100px;
-}
-#container1 p, #container3 p, #container5 p{
+.flex-container-dual p {
 	text-align: left;
 	font-family: 'karbon',Helvetica,arial,sans-serif;
 	font-size: 15px;
@@ -354,7 +316,7 @@ header {
 	padding-left: 12px;
 	padding-right: 80px;
 }
-#container0 p, #container2 p, #container4 p, #container6 p{
+.flex-container-wide p {
 	font-family: 'karbon',Helvetica,arial,sans-serif;
 	font-size: 15px;
 	line-height: 2;
@@ -404,7 +366,7 @@ header {
   bottom: -5px;
   left: -5px;
 }
-/* Back Pulse */
+/* BACK PULSE ANIMATION FOR BUTTONS */
 @-webkit-keyframes hvr-back-pulse {
   50% {
     background-color: rgba(247,247,247,0.8);
@@ -442,65 +404,38 @@ header {
 	padding-top: 10%;
 	color: white;
 }
-#linkbox1:hover .text h2, #linkbox2:hover .text h2, #linkbox4:hover .text h2,#linkbox5:hover .text h2,#linkbox7:hover .text h2, #linkbox8:hover .text h2{
-	transform:scaleY(1) scaleX(1) translateZ(0) translateX(20px);
-	transition:transform 0.3s cubic-bezier(0.175, 0.885, 0.62, 1.275) 
-}
-#linkbox1:hover .text hr, #linkbox2:hover .text hr, #linkbox4:hover .text hr,#linkbox5:hover .text hr,#linkbox7:hover .text hr, #linkbox8:hover .text hr{
-	transform:scaleY(1) scaleX(1.2) translateZ(0) translateX(27px);
-	transition:transform 0.3s cubic-bezier(0.175, 0.885, 0.62, 1.275) 
-}
-#linkbox1:hover .text p, #linkbox2:hover .text p, #linkbox4:hover .text p,#linkbox5:hover .text p,#linkbox7:hover .text p, #linkbox8:hover .text p{
+
+/* TEXT AND IMAGE TRANSFORMATIONS WHEN HOVERINGS */
+.article-dual:hover .text h2 {
 	transform:scaleY(1) scaleX(1) translateZ(0) translateX(20px);
 	transition:transform 0.3s cubic-bezier(0.175, 0.885, 0.62, 1.275)
 }
-#linkbox1:hover img, #linkbox2:hover img, #linkbox4:hover img, #linkbox5:hover img, #linkbox7:hover img, #linkbox8:hover img{
-	transform:scaleY(1) scaleX(1) scale3D(1.04, 1.04, 1) translateX(-5px) translateY(8px);
-	transition:transform 0.3s cubic-bezier(0.175, 0.885, 0.62, 1.275) 
-}
-#linkbox3:hover .text h2, #linkbox6:hover .text h2, #linkbox9:hover .text h2{
+.article-wide:hover .text h2 {
 	transform:scaleY(1) scaleX(1) translateZ(0) translateY(-3px);
-	transition:transform 0.3s cubic-bezier(0.175, 0.885, 0.62, 1.275) 
+	transition:transform 0.3s cubic-bezier(0.175, 0.885, 0.62, 1.275)
 }
-#linkbox3:hover .text hr, #linkbox6:hover .text hr, #linkbox9:hover .text hr{
+.article-dual:hover .text hr {
+	transform:scaleY(1) scaleX(1.2) translateZ(0) translateX(27px);
+	transition:transform 0.3s cubic-bezier(0.175, 0.885, 0.62, 1.275)
+}
+.article-wide:hover .text hr {
 	transform:scaleY(1) scaleX(1.2) translateZ(0);
-	transition:transform 0.3s cubic-bezier(0.175, 0.885, 0.62, 1.275) 
+	transition:transform 0.3s cubic-bezier(0.175, 0.885, 0.62, 1.275)
 }
-#linkbox3:hover .text p, #linkbox6:hover .text p, #linkbox9:hover .text p{
+.article-dual:hover .text p {
+	transform:scaleY(1) scaleX(1) translateZ(0) translateX(20px);
+	transition:transform 0.3s cubic-bezier(0.175, 0.885, 0.62, 1.275)
+}
+.article-wide:hover .text p {
 	transform:scaleY(1) scaleX(1) translateZ(0) translateY(3px);
 	transition:transform 0.3s cubic-bezier(0.175, 0.885, 0.62, 1.275)
 }
-#linkbox3:hover img, #linkbox6:hover img, #linkbox9:hover img{
+.article-dual:hover img, .article-wide:hover img{
 	transform:scaleY(1) scaleX(1) scale3D(1.04, 1.04, 1) translateX(-5px) translateY(8px);
-	transition:transform 0.3s cubic-bezier(0.175, 0.885, 0.62, 1.275) 
+	transition:transform 0.3s cubic-bezier(0.175, 0.885, 0.62, 1.275)
 }
-#linkbox1:hover {
-	background-color: rgba(145,175,164,0.8);
-}
-#linkbox2:hover {
-	background-color:rgba(132,134,134, 0.5);
-}
-#linkbox3:hover {
-	background-color: rgba(127,169,189,0.8);
-}
-#linkbox4:hover {
-	background-color:rgba(132,134,134, 0.5);
-}
-#linkbox5:hover {
-	background-color: rgba(145,175,164,0.8);
-}
-#linkbox6:hover {
-	background-color: rgba(127,169,189,0.8);
-}
-#linkbox7:hover {
-	background-color: rgba(145,175,164,0.8);
-}
-#linkbox8:hover {
-	background-color:rgba(132,134,134,0.5);
-}
-#linkbox9:hover {
-	background-color: rgba(127,169,189,0.8);
-}
+/* --------------------------------------------- */
+
 .contact {
 	color: black;
 	height: 80px;
@@ -517,10 +452,10 @@ header {
 .mail {
 	padding: 10px;
 	position: absolute;
-	top: 0;  
-    bottom: 25px;  
-    left: 0;  
-    right: 0;  
+	top: 0;
+    bottom: 25px;
+    left: 0;
+    right: 0;
     margin: auto;
 	width: 50px;
 	height: 50px;
@@ -532,62 +467,18 @@ header {
 	  	height: 500px;
 	  	max-height: 500px;
 	}
-	#linkbox1 {
+	.article-wide, .article-dual {
 	  	position: relative;
 	  	height: 500px;
 	  	max-height: 500px;
 	}
-	#linkbox2 {
-	   	position: relative;
-	   	height: 500px;
-	   	max-height: 500px;	
-	}
-	#linkbox1 img, #linkbox2 img, #linkbox3 img, #linkbox4 img, #linkbox5 img, #linkbox7 img, #linkbox8 img, #linkbox9 img {
+	.article-wide img, .article-dual img {
 		padding-right: 50px;
 		margin-top: 250px;
 		margin-right: -20px;
 		opacity: 0.3;
 	}
-	#linkbox3, #linkbox6, #linkbox9 {
-	  	position: relative;
-	   	height: 500px;
-	   	max-height: 500px;	
-	}
-	#linkbox6 img {
-		margin-left: 190px;
-		margin-top: 280px;
-	}
-	#linkbox4 {
-	  	position: relative;
-	   	height: 500px;
-	   	max-height: 500px;	
-	}
-	#linkbox5 {
-	  	position: relative;
-	   	height: 500px;
-	   	max-height: 500px;	
-	}
-	#linkbox6 {
-	  	position: relative;
-	   	height: 500px;
-	   	max-height: 500px;	
-	}
-	#linkbox7 {
-	  	position: relative;
-	  	height: 500px;
-	  	max-height: 500px;
-	}
-	#linkbox8 {
-	  	position: relative;
-	   	height: 500px;
-	   	max-height: 500px;	
-	}
-	#linkbox9 {
-	  	position: relative;
-	   	height: 500px;
-	   	max-height: 500px;	
-	}
-	.flex-container {
+	.flex-container-dual, .flex-container-wide {
 		margin: 10px;
 	}
 	.aboutcontainer {
@@ -602,56 +493,20 @@ header {
 	#biobox1 h2 {
 		font-size: 24px;
 	}
-	#linkbox1 {
+	.article-wide, .article-dual {
 	  	position: relative;
 	  	max-height: 470px;
 	}
-	#linkbox2 {
-	   	position: relative;
-	  	max-height: 470px;	
-	}
-	#linkbox1 img, #linkbox2 img, #linkbox4 img, #linkbox5 img, #linkbox7 img, #linkbox8 img {
+	.article-dual img {
 		width:120px;
 		height:120px;
 		opacity: 0.3;
 	}
-	#linkbox3 img, #linkbox6 img, #linkbox9 img {
+	.article-wide img {
 		margin-left: 200px;
 		width:120px;
 		height:120px;
 		opacity: 0.3;
-	}
-	#linkbox6 img, #linkbox9 img {
-		margin-left: 180px;
-		margin-top: 280px;
-	}
-	#linkbox3 {
-	  	position: relative;
-	  	max-height: 470px;
-	}
-	#linkbox4 {
-	  	position: relative;
-	  	max-height: 470px;
-	}
-	#linkbox5 {
-	  	position: relative;
-	  	max-height: 470px;
-	}
-	#linkbox6 {
-	  	position: relative;
-	  	max-height: 470px;
-	}
-	#linkbox7 {
-	  	position: relative;
-	  	max-height: 470px;
-	}
-	#linkbox8 {
-	  	position: relative;
-	  	max-height: 470px;
-	}
-	#linkbox9 {
-	  	position: relative;
-	  	max-height: 470px;
 	}
 	.aboutcontainer p {
 		padding-left: 40px;
@@ -660,13 +515,13 @@ header {
 }
 @media screen and (max-width: 450px) {
 	/*
-	.flex-container {
+	.flex-container-dual, .flex-container-wide {
 		padding-left: 10px;
 	}
 	.aboutcontainer {
 		padding-left: 10px;
 	}*/
-	#container0 h2, #container1 h2, #container2 h2, #container3 h2, #container4 h2, #container5 h2, #container6 h2{
+	.flex-container-dual h2, .flex-container-wide h2,{
 		font-size: 18px;
 	}
 	#biobox1 {
@@ -680,55 +535,18 @@ header {
 	  	max-height: 470px;
 	  	margin-bottom: 70px;
 	}
-	#linkbox1 {
-	  	position: relative;
-	  	max-height: 470px;
-	}
-	#linkbox2 {
-	   	position: relative;
-	  	max-height: 470px;	
-	}
-	#linkbox1 img, #linkbox2 img, #linkbox4 img, #linkbox5 img, #linkbox7 img, #linkbox8 img {
+	.article-dual img {
 		margin-left: 190px;
 		margin-top: 300px;
 		width:100px;
 		height:100px;
 		opacity: 0.3;
 	}
-	#linkbox3 img, #linkbox6 img, #linkbox9 img {
+	.article-wide img {
 		margin-left: 190px;
 		margin-top: 300px;
 		width:100px;
 		height:100px;
 		opacity: 0.3;
-	}
-	#linkbox3 {
-	  	position: relative;
-	  	max-height: 470px;
-	}
-	#linkbox4 {
-	  	position: relative;
-	  	max-height: 470px;
-	}
-	#linkbox5 {
-	  	position: relative;
-	  	max-height: 470px;
-	}
-	#linkbox6 {
-	  	position: relative;
-	  	max-height: 470px;
-	  	width: 120%;
-	}
-	#linkbox7 {
-	  	position: relative;
-	  	max-height: 470px;
-	}
-	#linkbox8 {
-	  	position: relative;
-	  	max-height: 470px;
-	}
-	#linkbox9 {
-	  	position: relative;
-	  	max-height: 470px;
 	}
 }

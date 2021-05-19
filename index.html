@@ -33,9 +33,9 @@
 </script>
 <script>
 // This function is used to add the sticky class to our navbar so it sticks when scrolling down
-	$(document).ready(function(){ 
+	$(document).ready(function(){
 		var navTop = $("navbar").offset().top;
-		
+
 		var stickyNav = function(){
 		  if ($(window).scrollTop() >= navTop){
 		    $("navbar").addClass("sticky");
@@ -45,9 +45,9 @@
 		    $("border-top").removeClass("sticky");
 		  }
 		};
-		
+
 		stickyNav();
-		
+
 		$(window).scroll(function(){
 			stickyNav();
 		});
@@ -65,15 +65,15 @@
 	      $("#logo").fadeIn();
 	    }
 	  });
-	  $('#up, #logo').click(function(){ 
-	        $("html, body").animate({ scrollTop: 0 }, 600); 
-	        return false; 
+	  $('#up, #logo').click(function(){
+	        $("html, body").animate({ scrollTop: 0 }, 600);
+	        return false;
 	  });
 	});
 </script>
 
 <body>
-	
+
 <header>
     <nav id="navbar">
         <a href="" class="fld-c-main-nav__item     fld-is-active">Portfolio</a>
@@ -87,9 +87,35 @@
 <div class="border-top"> </div>
 <div class="border-left"> </div>
 <div class="border-right"> </div>
-	
-<div id="container0" class="flex-container">
-	<div id="linkbox3" class="article">
+<div id="container0" class="flex-container-dual">
+	<br>
+	<div id="linkbox1" class="article-dual">
+		<img src="images/recorder-player.png" width="200px" height="200px">
+		<div class="overlay">
+			<div class="text">
+				<h2>Song Recommendation Engine</h2><div class="twinrow"><hr /></div>
+				<p>An item-content similarity recommendation engine constructed using more than 10,000 songs and
+          the Turicreate library in Python. By extracting and comparing audio metrics from songs, similar items are recommended to
+          users based on their most recent playlist.
+				</p>
+				<a href="https://github.com/fitzpk/SongRecommendationEngine" ontouchend="this.onclick=fix"><button class="button">View Project</button></a><br><br>
+			</div>
+		</div>
+	</div>
+	<div id="linkbox2" class="article-dual">
+		<img src="images/web-development.png" width="200px" height="200px">
+		<div class="overlay">
+			<div class="text">
+				<h2>Web Scraping with Selenium</h2><div class="twinrow"><hr /></div>
+				<p>Through the utilization of the Selenium library, these python scripts enable the user to interact with
+          NSERC's research awards database and extract detailed data that is otherwise not exportable.</p>
+				<a href="https://github.com/fitzpk/NSERC-Web-Scraper" ontouchend="this.onclick=fix"><button class="button">View Project</button></a><br><br>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="container1" class="flex-container-wide">
+	<div id="linkbox3" class="article-wide">
 		<img src="images/golf.png" width="200px" height="200px">
 		<div class="overlay">
 			<div class="text">
@@ -102,22 +128,22 @@
 		</div>
 	</div>
 </div>
-<div id="container1" class="flex-container">
+<div id="container2" class="flex-container-dual">
 	<br>
-	<div id="linkbox1" class="article">
+	<div id="linkbox4" class="article-dual">
 		<img src="images/shopcolour.png" width="200px" height="200px">
 		<div class="overlay">
 			<div class="text">
 				<h2>Local Business Analysis Application</h2><div class="twinrow"><hr /></div>
 				<p>Online map, driven by the JavaScript-based Leaflet API, that serves as a resource for community members
-				to identify local businesses, assess competition, and analyze the spatial distribution within their town or city. 
+				to identify local businesses, assess competition, and analyze the spatial distribution within their town or city.
 				</p>
 				<a href="https://fitzpk.github.io/AncasterApp.github.io/" ontouchend="this.onclick=fix"><button class="button">View Project</button></a><br><br>
 				<a href="https://www.dropbox.com/s/2g6c7vfn5hzzyx9/AncasterUsersManual.pdf?dl=0" ontouchend="this.onclick=fix"><button class="button">Learn More</button></a>
 			</div>
 		</div>
 	</div>
-	<div id="linkbox2" class="article">
+	<div id="linkbox5" class="article-dual">
 		<img src="images/mapcolour.png" width="200px" height="200px">
 		<div class="overlay">
 			<div class="text">
@@ -130,21 +156,21 @@
 		</div>
 	</div>
 </div>
-<div id="container2" class="flex-container">
-	<div id="linkbox3" class="article">
+<div id="container3" class="flex-container-wide">
+	<div id="linkbox6" class="article-wide">
 		<img src="images/twitcolour.png" width="200px" height="200px">
 		<div class="overlay">
 			<div class="text">
 				<h2>Live GeoTwitter App</h2><div class="singlerow"><hr /></div>
-				<p>This product uses the Tweepy Python module to stream tweets, export them to a JSON file, and manipulate them into GeoJSON data. 
+				<p>This product uses the Tweepy Python module to stream tweets, export them to a JSON file, and manipulate them into GeoJSON data.
 				Data is then pushed to Github in timed intervals, where it is made available in a custom web map constructed using Leaflet, JavaScript, and jQuery.</p>
 				<a href="https://github.com/fitzpk/Tweets-on-a-Map" ontouchend="this.onclick=fix"><button class="button">View Project</button></a>
 			</div>
 		</div>
 	</div>
 </div>
-<div id="container3" class="flex-container">
-	<div id="linkbox4" class="article">
+<div id="container4" class="flex-container-dual">
+	<div id="linkbox7" class="article-dual">
 		<img src="images/gascolour.png" width="200px" height="200px">
 		<div class="overlay">
 			<div class="text">
@@ -155,7 +181,7 @@
 		  	</div>
 		</div>
 	</div>
-	<div id="linkbox5" class="article">
+	<div id="linkbox8" class="article-dual">
 		<img src="images/pills.png" width="200px" height="200px">
 		<div class="overlay">
 			<div class="text">
@@ -167,51 +193,51 @@
 		</div>
 	</div>
 </div>
-<div id="container4" class="flex-container">
-	<div id="linkbox6" class="article">
+<div id="container5" class="flex-container-wide">
+	<div id="linkbox9" class="article-wide">
 		<img src="images/appcolour.png" width="200px" height="200px">
 		<div class="overlay">
 			<div class="text">
 				<h2>Python Tkinter Apps for GeoJSON Analysis</h2><div class="singlerow"><hr /></div>
-				<p>Utilizing Tkinter GUIs, these two apps process GeoJSON data to perform geometric calculations. The first application 
+				<p>Utilizing Tkinter GUIs, these two apps process GeoJSON data to perform geometric calculations. The first application
 				is a simple polygon area and perimeter calculator, while the second application is a point-in-polygon analyzer.</p>
 				<a href="https://github.com/fitzpk/Python-Tkinter-Apps" ontouchend="this.onclick=fix"><button class="button">View Projects</button></a>
 			</div>
 		</div>
 	</div>
 </div>
-<div id="container5" class="flex-container">
-	<div id="linkbox7" class="article">
+<div id="container6" class="flex-container-dual">
+	<div id="linkbox10" class="article-dual">
 		<img src="images/habitatcolour.png" width="200px" height="200px">
 		<div class="overlay">
 			<div class="text">
 				<h2>Modelling Least-Cost Habitat Corridors for White-Tailed Deer</h2><div class="twinrow"><hr /></div>
 				<p>Using a combination of Spatial Analyst tools and map algebra techniques within ArcGIS Model Builder,
-				this project discerns a least-cost corridor between two potential white-tailed 
+				this project discerns a least-cost corridor between two potential white-tailed
 				deer habitats in any location.</p>
 				<a href="https://www.dropbox.com/s/gplfmi0kmpht5im/HabitatCorridor.pdf?dl=0" ontouchend="this.onclick=fix"><button class="button">View Project</button></a>
 			</div>
 		</div>
 	</div>
-	<div id="linkbox8" class="article">
+	<div id="linkbox11" class="article-dual">
 		<img src="images/servercolour.png" width="200px" height="200px">
 		<div class="overlay">
 			<div class="text">
 				<h2>Database Automation with PL/SQL Scripting</h2><div class="twinrow"><hr /></div>
-				<p>Through Oracle PL/SQL scripting, this program creates a relational data warehouse designed to store municipal property data. 
+				<p>Through Oracle PL/SQL scripting, this program creates a relational data warehouse designed to store municipal property data.
 				It then retrieves data from a shared server, structures the data, and finally imports it into designated tables</p>
 				<a href="https://www.dropbox.com/s/ebdlgewbace0aoa/PL%3ASQL_DatabaseTasks.pdf?dl=0" ontouchend="this.onclick=fix"><button class="button">View Project</button></a>
 			</div>
 		</div>
 	</div>
 </div>
-<div id="container6" class="flex-container">
-	<div id="linkbox9" class="article">
+<div id="container7" class="flex-container-wide">
+	<div id="linkbox12" class="article-wide">
 		<img src="images/reed.png" width="200px" height="180px">
 		<div class="overlay">
 			<div class="text">
 				<h2>Modelling Watershed Analytics</h2><div class="singlerow"><hr /></div>
-				<p>Utilizing hydrological and surficial tools within ArcGIS Model Builder, this process allows conservation authorities and county-level governments 
+				<p>Utilizing hydrological and surficial tools within ArcGIS Model Builder, this process allows conservation authorities and county-level governments
 				to effectively assess the hydrological characteristics and composition of the watersheds they govern.</p>
 				<a href="https://www.dropbox.com/s/e55xqrjbrdzfc1e/WatershedAnalysis.pdf?dl=0" ontouchend="this.onclick=fix"><button class="button">View Project</button></a>
 			</div>

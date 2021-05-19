@@ -314,7 +314,7 @@ header {
 	font-size: 15px;
 	line-height: 1.8;
 	padding-left: 12px;
-	padding-right: 80px;
+	padding-right: 60px;
 }
 .flex-container-wide p {
 	font-family: 'karbon',Helvetica,arial,sans-serif;
@@ -493,6 +493,9 @@ header {
 	#biobox1 h2 {
 		font-size: 24px;
 	}
+	.text h2 {
+		font-size: 16px;
+	}
 	.article-wide, .article-dual {
 	  	position: relative;
 	  	max-height: 470px;
@@ -514,15 +517,8 @@ header {
 	}
 }
 @media screen and (max-width: 450px) {
-	/*
-	.flex-container-dual, .flex-container-wide {
-		padding-left: 10px;
-	}
-	.aboutcontainer {
-		padding-left: 10px;
-	}*/
-	.flex-container-dual h2, .flex-container-wide h2,{
-		font-size: 18px;
+	.text h2,{
+		font-size: 14px;
 	}
 	#biobox1 {
 	  	padding-right: 10px;

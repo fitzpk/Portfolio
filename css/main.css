@@ -256,7 +256,7 @@ header {
 }
 .trophy_img {
 	position: relative;
-	margin-right: 87%;
+	margin-right: 89%;
 	margin-top: -2%;
 	margin-bottom: 2%;
 	opacity: 0.8;
@@ -484,6 +484,13 @@ header {
 		margin-top: 250px;
 		margin-right: -20px;
 		opacity: 0.3;
+	}
+	.trophy_img {
+		position: relative;
+		margin-right: 87%;
+		margin-top: -2%;
+		margin-bottom: 2%;
+		opacity: 0.8;
 	}
 	.flex-container-dual, .flex-container-wide {
 		margin: 10px;

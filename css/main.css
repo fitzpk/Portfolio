@@ -261,6 +261,9 @@ header {
 	margin-bottom: 2%;
 	opacity: 0.8;
 }
+.checked {
+  color: #FFD700;
+}
 .twinrow hr {
 	border: solid 1.5px #656a6b;
 	color: #656a6b;

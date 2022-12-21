@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width; initial-scale=1.0">
   <style>
 	:root {
-    	--highlight-color: #c46863;
+    	--highlight-color: #954A59;
     }
   </style>
   <link rel="icon" href="https://dl.dropbox.com/s/jkrctqmdcterbia/favicon.ico?dl=0" type="image/x-icon">
@@ -38,9 +38,9 @@
 </script>
 <script>
 // This function is used to add the sticky class to our navbar so it sticks when scrolling down
-	$(document).ready(function(){ 
+	$(document).ready(function(){
 		var navTop = $("navbar").offset().top;
-		
+
 		var stickyNav = function(){
 		  if ($(window).scrollTop() >= navTop){
 		    $("navbar").addClass("sticky");
@@ -50,9 +50,9 @@
 		    $("border-top").removeClass("sticky");
 		  }
 		};
-		
+
 		stickyNav();
-		
+
 		$(window).scroll(function(){
 			stickyNav();
 		});
@@ -70,9 +70,9 @@
 	      $("#logo").fadeIn();
 	    }
 	  });
-	  $('#up, #logo').click(function(){ 
-	        $("html, body").animate({ scrollTop: 0 }, 600); 
-	        return false; 
+	  $('#up, #logo').click(function(){
+	        $("html, body").animate({ scrollTop: 0 }, 600);
+	        return false;
 	  });
 	});
 </script>
@@ -86,14 +86,14 @@
 				useTransform: true,
 				cssEase: 'ease-in',
 			    arrows: false,
-			    autoplay: true, 
+			    autoplay: true,
 	    		autoplaySpeed: 3000
 			});
 	    });
     });
 </script>
 <body>
-	
+
 <header>
     <nav id="navbar">
         <a href="index.html" class="fld-c-main-nav__item">Projects</a>

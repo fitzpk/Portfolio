@@ -74,7 +74,7 @@ header {
 	padding-left: 5px;
 	padding-right: 5px;
 	letter-spacing: 0.10em;
-	font-family:'Raleway', sans-serif;
+	font-family: 'Coda', cursive;
     color: black;
     font-weight: bold;
     line-height: 1.6;
@@ -83,7 +83,6 @@ header {
 }
 .aboutcontainer p {
 	color: black;
-	font-family: 'karbon',Helvetica,arial,sans-serif;
 	font-size: 18px;
 	line-height: 2;
 	padding-left: 100px;

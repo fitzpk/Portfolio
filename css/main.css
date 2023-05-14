@@ -399,13 +399,13 @@ header {
 /* BACK PULSE ANIMATION FOR BUTTONS */
 @-webkit-keyframes hvr-back-pulse {
   50% {
-		background-color: rgba(141,155,106,0.7);
+		background-color: rgba(149,74,89,0.7);
     /*background-color: rgba(247,247,247,0.8);*/
   }
 }
 @keyframes hvr-back-pulse {
   50% {
-		background-color: rgba(141,155,106,0.7);
+		background-color: rgba(149,74,89,0.7);
     /*background-color: rgba(247,247,247,0.8);*/
   }
 }

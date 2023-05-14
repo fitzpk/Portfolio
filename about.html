@@ -17,6 +17,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Duru+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Rubik:500" rel="stylesheet">
@@ -110,27 +111,56 @@
 <div class="border-left"> </div>
 <div class="border-right"> </div>
 
+<div id='about_outer'>
 <div id="bio" class="aboutcontainer">
-	<div id="biobox1" class="aboutarticle">
-		<div id="headingtext">
-			<img src="images/bass-guitar.png" class="headimage" width="100px" height="100px">
-			<h2>Hi there! I'm Kevin.</h2><br>
-			<h2>I'm a Data Scientist with Canadian roots and a love of learning. While you're here please take a moment to check out some of my projects!</h2>
-
+	<div id="intro_box" class="aboutarticle">
+		<div style="z-index: 100;"><p><b>KEVIN FITZGERALD</b></p></div>
+		<table class="charts-css area multiple" id="my-chart">
+			<tbody>
+				<tr>
+					<td style="--start: 0; --size: 0.1; --color:rgba(149,74,89,0.8);"><span class="data"></span></td>
+					<td style="--start: 0; --size: 0.0; --color:rgba(221,163,89,0.8);"><span class="data"></span></td>
+					<td style="--start: 0; --size: 0.2; --color:rgba(246,176,146,0.7);"><span class="data"></span></td>
+				</tr> 
+				<tr>
+					<td style="--start: 0.1; --size: 0.5; --color: rgba(149,74,89,0.8);"><span class="data"></span></td> 
+					<td style="--start: 0.0; --size: 0.2; --color:rgba(221,163,89,0.8);"><span class="data"></span></td> 
+					<td style="--start: 0.2; --size: 0.4; --color:rgba(246,176,146,0.7);"><span class="data"></span></td>
+				</tr> 
+				<tr>
+					<td style="--start: 0.5; --size: 0.8; --color: rgba(149,74,89,0.8);"><span class="data"></span></td>
+					<td style="--start: 0.2; --size: 0.5; --color:rgba(221,163,89,0.8);"><span class="data"></span></td>
+					<td style="--start: 0.4; --size: 0.1; --color:rgba(246,176,146,0.7);"><span class="data"></span></td>
+				</tr>
+				<tr>
+					<td style="--start: 0.8; --size: 0.4; --color: rgba(149,74,89,0.8);"><span class="data"></span></td>
+					<td style="--start: 0.5; --size: 0.3; --color:rgba(221,163,89,0.8);"><span class="data"></span></td>
+					<td style="--start: 0.1; --size: 0.2; --color:rgba(246,176,146,0.7);"><span class="data"></span></td>
+				</tr>
+			</tbody>
+		  </table>
+	</div>
+	<div id="occupation_box" class="aboutarticle">
+		<div>
+			<p class="card_title">MAIN SQUEEZE</p>
+			<p>Analytics Officer</p>
 		</div>
 	</div>
+	<div id="location_box" class="aboutarticle">
+		<div>
+			<p class="card_title">LOCATION</p>
+			<p>Oh Canada&nbsp;&nbsp;&nbsp;<img src="images/maple-leaf.png" class="loc_image" width="24px" height="24px"></p>
+		</div>
+	</div>
+	<div id="contact_box" class="aboutarticle">
+		<div>
+			<p class="card_title">CONTACT</p>
+			<a href="mailto:kevin.fitzgerald@hotmail.ca?Subject=General%20Inquiry"><p>kevin.fitzgerald@hotmail.ca</p></a>
+		</div>
+	</div>
+	<br>
+</div>
 </div>
 
-<br>
-<footer class="contact">
-	<div class="mail"><br>
-		<a href="mailto:kevin.fitzgerald@hotmail.ca?Subject=General%20Inquiry"><img src="images/mailboxcustomlight.png" class="mailbox" height="42" width="42"></a>
-    </div>
-    <br><br><br><br>
-  	<div class="copyright">
-  		<p>Kevin Fitzgerald &copy; 2018</p>
-  	</div>
-</footer>
-<br>
 </body>
 </html>

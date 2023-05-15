@@ -253,7 +253,7 @@ header {
 		margin-right: 5px;
 }
 
-#container0, #container2, #container3 {
+#container0, #container3, #container4 {
 	margin-top: 20px;
 }
 
@@ -268,13 +268,13 @@ header {
 	position: relative;
 	height: 440px;
 	width: 440px;
-	background-color: #8da3ac;
+	background-color: #d9e1e6;
 	border: 0px solid black;
 	border-radius: 3px;
 }
 
 #linkbox3, #linkbox9 {
-	background-color: #F6B092;
+	background-color: #f1e8df;
 }
 
 #aboutbox1 img, #aboutbox2 img, #aboutbox3 img {
@@ -293,7 +293,7 @@ header {
 	opacity: 0.3;
 }
 .checked {
-  color: #FFD700;
+  color: #363427;
 }
 .twinrow hr {
 	border: solid 0.5px white;
@@ -433,12 +433,12 @@ header {
 }
 .text {
 	padding-top: 10%;
-	color: white;
+	color: black;
 }
 .leaderboard {
 	position: absolute;
 	bottom: 0px;
-	color: white;
+	color: black;
 }
 
 /* TEXT AND IMAGE TRANSFORMATIONS WHEN HOVERINGS */

@@ -273,14 +273,6 @@ header {
 	border-radius: 3px;
 }
 
-#linkbox3, #linkbox9 {
-	background-color: #f1e8df;
-}
-
-#linkbox0 .overlay {
-	top:30%;
-}
-
 #aboutbox1 img, #aboutbox2 img, #aboutbox3 img {
 	position: relative;
 }
@@ -427,7 +419,7 @@ header {
 }
 .overlay {
 	position: absolute;
-	top: 45%;
+	top: 50%;
 	left: 50%;
 	opacity: 1;
 	transform: translate(-50%, -50%);
@@ -435,6 +427,12 @@ header {
 	height: 100%;
 	width: 100%;
 }
+
+#linkbox0 .overlay, #linkbox3 .overlay, #linkbox6 .overlay, #linkbox9 .overlay {
+	top: 35%;
+}
+
+
 .text {
 	padding-top: 10%;
 	color: black;
@@ -475,9 +473,9 @@ header {
 	transition:transform 0.3s cubic-bezier(0.175, 0.885, 0.62, 1.275)
 }
 
-.article-dual:hover {
+.article-dual:hover, .article-wide:hover {
 	background-color: #efe4d8;
-	transition: 0.3s;
+	transition: 0.2s;
 	transition-timing-function: ease-in-out;
 }
 
@@ -526,8 +524,15 @@ header {
 	#my-chart.area {
 		max-width: 320px;
 	  }
-	#linkbox0 .overlay {
-		top:45%;
+	#linkbox0, #linkbox2 {
+		height: 525px;
+		max-height: 525px;
+	}
+	.overlay {
+		top: 50%;
+	}
+	#linkbox0 .overlay, #linkbox3 .overlay, #linkbox6 .overlay, #linkbox9 .overlay {
+		top: 50%;
 	}
 }
 @media screen and (max-width: 575px) {

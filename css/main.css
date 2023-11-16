@@ -277,6 +277,10 @@ header {
 	background-color: #f1e8df;
 }
 
+#linkbox0 .overlay {
+	top:30%;
+}
+
 #aboutbox1 img, #aboutbox2 img, #aboutbox3 img {
 	position: relative;
 }
@@ -462,13 +466,19 @@ header {
 	transform:scaleY(1) scaleX(1) translateZ(0) translateX(20px);
 	transition:transform 0.3s cubic-bezier(0.175, 0.885, 0.62, 1.275)
 }
-.article-wide:hover .text p, ,  .article-wide:hover .leaderboard p {
+.article-wide:hover .text p,  .article-wide:hover .leaderboard p {
 	transform:scaleY(1) scaleX(1) translateZ(0) translateY(3px);
 	transition:transform 0.3s cubic-bezier(0.175, 0.885, 0.62, 1.275)
 }
 .article-dual:hover .back_img, .article-wide:hover .back_img{
 	transform:scaleY(1) scaleX(1) scale3D(1.04, 1.04, 1) translateX(-5px) translateY(8px);
 	transition:transform 0.3s cubic-bezier(0.175, 0.885, 0.62, 1.275)
+}
+
+.article-dual:hover {
+	background-color: #efe4d8;
+	transition: 0.3s;
+	transition-timing-function: ease-in-out;
 }
 
 /* --------------------------------------------- */
@@ -516,6 +526,9 @@ header {
 	#my-chart.area {
 		max-width: 320px;
 	  }
+	#linkbox0 .overlay {
+		top:45%;
+	}
 }
 @media screen and (max-width: 575px) {
 	.text h2 {

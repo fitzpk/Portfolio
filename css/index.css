@@ -65,8 +65,17 @@ nav a.selected {
 	border-bottom-right-radius: 15px;
 	background-color:#c9d6cf;
 }
+.project-container:hover {
+	background-color:rgb(188, 200, 189);
+	transition: 0.1s ease-in-out;
+}
+
 .project-container:nth-child(n+5) {
 	background-color:#f0e7d8;
+}
+.project-container:nth-child(n+5):hover {
+	background-color:#e9d5c7;
+	transition: 0.1s ease-in-out;
 }
 .project {
 	width: 100%;

@@ -1,166 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Portfolio</title>
-  <meta name="keywords" content="HTML,CSS,JavaScript,SQL,jQuery,Web development,GIS,Python,Tweepy,R,SPSS,Spatial Analysis,ArcGIS,Oracle,Geomatics,MapInfo,Postgres,PostGIS,Big Data">
-  <meta name="description" content="Portfolio">
-  <meta name="author" content="K F">
-  <meta name="viewport" content="width=device-width; initial-scale=1.0">
-  <style>
-	:root {
-    	--highlight-color: #954A59;
-    }
-  </style>
-  <link rel="icon" href="https://dl.dropbox.com/s/jkrctqmdcterbia/favicon.ico?dl=0" type="image/x-icon">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Duru+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Rubik:500" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio">
+    <meta name="author" content="K F">
+    <title>K. Fitzgerald - About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/about.css">
+    <link rel="icon" href="https://dl.dropbox.com/s/jkrctqmdcterbia/favicon.ico?dl=0" type="image/x-icon">
 </head>
-<script>
-// This function is used to change the name shown in the browser tab
-	document.title = "About"
-</script>
-<script>
-// This function is used to remove sticky button hover states on mobiles
-	function fix(){
-	    var el = this;
-	    var par = el.parentNode;
-	    var next = el.nextSibling;
-	    par.removeChild(el);
-	    setTimeout(function() {par.insertBefore(el, next);}, 0)
-	}
-</script>
-<script>
-// This function is used to add the sticky class to our navbar so it sticks when scrolling down
-	$(document).ready(function(){
-		var navTop = $("navbar").offset().top;
-
-		var stickyNav = function(){
-		  if ($(window).scrollTop() >= navTop){
-		    $("navbar").addClass("sticky");
-		    $("border-top").addClass("sticky");
-		  } else {
-		    $("navbar").removeClass("sticky");
-		    $("border-top").removeClass("sticky");
-		  }
-		};
-
-		stickyNav();
-
-		$(window).scroll(function(){
-			stickyNav();
-		});
-	});
-</script>
-<script>
-	$(document).ready(function(){
-	  $("#up").hide();
-	  $(window).scroll(function() {
-	    if($(window).scrollTop() > 300) {
-	      $("#logo").fadeOut();
-	      $("#up").fadeIn();
-	    } else {
-	      $("#up").fadeOut();
-	      $("#logo").fadeIn();
-	    }
-	  });
-	  $('#up, #logo').click(function(){
-	        $("html, body").animate({ scrollTop: 0 }, 600);
-	        return false;
-	  });
-	});
-</script>
-<script>
-// This function is control the carousel slides
-    $(document).ready(function(){
-    	$(".slideimage").hide();
-    	$(".aboutcontainer").mouseenter(function(){
-    		$(".slideimage").show();
-	        $(".single-item").slick({
-				useTransform: true,
-				cssEase: 'ease-in',
-			    arrows: false,
-			    autoplay: true,
-	    		autoplaySpeed: 3000
-			});
-	    });
-    });
-</script>
 <body>
+    <header>
+        <nav>
+            <a href="index.html">PROJECTS</a>
+            <a href="about.html" class="selected">ABOUT</a>
+        </nav>
+        <div class="header-item">K. Fitzgerald</div>
+    </header>
 
-<header>
-    <nav id="navbar">
-        <a href="index.html" class="fld-c-main-nav__item">PROJECTS</a>
-        <a href="" class="fld-c-main-nav__item     fld-is-active">ABOUT</a>
-        <div id="navright">
-			<a href="#"><span id="up">&#8593;</span></a>
-		</div>
-    </nav>
-</header>
-
-<div class="border-top"> </div>
-<div class="border-left"> </div>
-<div class="border-right"> </div>
-
-<div id='about_outer'>
-<div id="bio" class="aboutcontainer">
-	<div id="intro_box" class="aboutarticle">
-		<div style="z-index: 100;"><p><b>KEVIN FITZGERALD</b></p></div>
-		<table class="charts-css area multiple" id="my-chart">
-			<tbody>
-				<tr>
-					<td style="--start: 0; --size: 0.1; --color:rgba(149,74,89,0.8);"><span class="data"></span></td>
-					<td style="--start: 0; --size: 0.0; --color:rgba(221,163,89,0.8);"><span class="data"></span></td>
-					<td style="--start: 0; --size: 0.2; --color:rgba(246,176,146,0.7);"><span class="data"></span></td>
-				</tr> 
-				<tr>
-					<td style="--start: 0.1; --size: 0.5; --color: rgba(149,74,89,0.8);"><span class="data"></span></td> 
-					<td style="--start: 0.0; --size: 0.2; --color:rgba(221,163,89,0.8);"><span class="data"></span></td> 
-					<td style="--start: 0.2; --size: 0.4; --color:rgba(246,176,146,0.7);"><span class="data"></span></td>
-				</tr> 
-				<tr>
-					<td style="--start: 0.5; --size: 0.8; --color: rgba(149,74,89,0.8);"><span class="data"></span></td>
-					<td style="--start: 0.2; --size: 0.5; --color:rgba(221,163,89,0.8);"><span class="data"></span></td>
-					<td style="--start: 0.4; --size: 0.1; --color:rgba(246,176,146,0.7);"><span class="data"></span></td>
-				</tr>
-				<tr>
-					<td style="--start: 0.8; --size: 0.4; --color: rgba(149,74,89,0.8);"><span class="data"></span></td>
-					<td style="--start: 0.5; --size: 0.3; --color:rgba(221,163,89,0.8);"><span class="data"></span></td>
-					<td style="--start: 0.1; --size: 0.2; --color:rgba(246,176,146,0.7);"><span class="data"></span></td>
-				</tr>
-			</tbody>
-		  </table>
-	</div>
-	<div id="occupation_box" class="aboutarticle">
-		<div>
-			<p class="card_title">MAIN SQUEEZE</p>
-			<p>Analytics Officer</p>
+	<div class="center-wrapper">
+		<div class="business-card">
+			<div class="name">KEVIN FITZGERALD</div>
+			<hr class="top_hr">
+			<div class="row">
+				<p class="card_title">MAIN SQUEEZE</p>
+				<p>Analytics Officer</p>
+			</div>
+			<hr class="lower_hr">
+			<div class="row">
+				<p class="card_title">LOCATION</p>
+				<p>Oh Canada&nbsp;&nbsp;&nbsp;<img src="images/maple-leaf.png" class="loc_image" width="24px" height="24px"></p>
+			</div>
+			<hr class="lower_hr">
+			<div class="row">
+				<p class="card_title">CONTACT</p>
+				<a href="mailto:kevin.fitzgerald@hotmail.ca?Subject=General%20Inquiry"><p>kevin.fitzgerald@hotmail.ca</p></a>
+			</div>
 		</div>
 	</div>
-	<div id="location_box" class="aboutarticle">
-		<div>
-			<p class="card_title">LOCATION</p>
-			<p>Oh Canada&nbsp;&nbsp;&nbsp;<img src="images/maple-leaf.png" class="loc_image" width="24px" height="24px"></p>
-		</div>
-	</div>
-	<div id="contact_box" class="aboutarticle">
-		<div>
-			<p class="card_title">CONTACT</p>
-			<a href="mailto:kevin.fitzgerald@hotmail.ca?Subject=General%20Inquiry"><p>kevin.fitzgerald@hotmail.ca</p></a>
-		</div>
-	</div>
-	<br>
-</div>
-</div>
 
+
+    <script>
+        // Get all navigation links
+        const navLinks = document.querySelectorAll('nav a');
+
+        // Add event listener to each link
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                // Remove 'selected' class from all links
+                navLinks.forEach(link => link.classList.remove('selected'));
+                
+                // Add 'selected' class to clicked link
+                this.classList.add('selected');
+            });
+        });
+    </script>
 </body>
 </html>

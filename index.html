@@ -1,247 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Portfolio</title>
-  <meta name="keywords" content="HTML,CSS,JavaScript,SQL,jQuery,Web development,GIS,Python,Tweepy,R,SPSS,Spatial Analysis,ArcGIS,Oracle,Geomatics,MapInfo,Postgres,PostGIS,Big Data">
-  <meta name="description" content="Portfolio">
-  <meta name="author" content="K F">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-	:root {
-    	--highlight-color: #954A59;
-    }
-  </style>
-  <link rel="icon" href="https://dl.dropbox.com/s/jkrctqmdcterbia/favicon.ico?dl=0" type="image/x-icon">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Duru+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Rubik:500" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio">
+    <meta name="author" content="K F">
+    <title>K. Fitzgerald - Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="https://dl.dropbox.com/s/jkrctqmdcterbia/favicon.ico?dl=0" type="image/x-icon">
 </head>
-<script>
-// This function is used to remove sticky button hover states on mobiles
-	function fix(){
-	    var el = this;
-	    var par = el.parentNode;
-	    var next = el.nextSibling;
-	    par.removeChild(el);
-	    setTimeout(function() {par.insertBefore(el, next);}, 0)
-	}
-</script>
-<script>
-// This function is used to add the sticky class to our navbar so it sticks when scrolling down
-	$(document).ready(function(){
-		var navTop = $("navbar").offset().top;
-
-		var stickyNav = function(){
-		  if ($(window).scrollTop() >= navTop){
-		    $("navbar").addClass("sticky");
-		    $("border-top").addClass("sticky");
-		  } else {
-		    $("navbar").removeClass("sticky");
-		    $("border-top").removeClass("sticky");
-		  }
-		};
-
-		stickyNav();
-
-		$(window).scroll(function(){
-			stickyNav();
-		});
-	});
-</script>
-<script>
-	$(document).ready(function(){
-	  $("#up").hide();
-	  $(window).scroll(function() {
-	    if($(document).scrollTop() > 300) {
-	      $("#logo").fadeOut();
-	      $("#up").fadeIn();
-	    } else {
-	      $("#up").fadeOut();
-	      $("#logo").fadeIn();
-	    }
-	  });
-	  $('#up, #logo').click(function(){
-	        $("html, body").animate({ scrollTop: 0 }, 600);
-	        return false;
-	  });
-	});
-</script>
-
 <body>
-
-<header>
-    <nav id="navbar">
-        <a href="" class="fld-c-main-nav__item     fld-is-active">PROJECTS</a>
-        <a href="about.html" class="fld-c-main-nav__item">ABOUT</a>
-        <div id="navright">
-			<a href="#"><span id="up">&#8593;</span></a>
-		</div>
-    </nav>
-</header>
-<div class="project-category"><p>data science & engineering</p></div>
-<div class="project-types"><p>Machine Learning  &nbsp; &#x2022;  &nbsp; Webscraping &nbsp; &#x2022; &nbsp;  Data Processing</p></div>
-<br>
-<div id="container0" class="flex-container-dual">
-	<div id="linkbox0" class="article-dual">
-		<img class="back_img" src="images/letter.png" width="200px" height="200px">
-		<div class="overlay">
-			<div class="text">
-				<h2>Kaggle - Evaluating Student Summaries</h2><div class="twinrow"><hr /></div>
-				<p>In this competition funded by The Learning Agency Lab and Vanderbilt University, competitors must use written student summaries to predict both wording and content scores.
+    <header>
+        <nav>
+            <a href="index.html"class="selected">PROJECTS</a>
+            <a href="about.html">ABOUT</a>
+        </nav>
+        <div class="header-item">K. Fitzgerald</div>
+    </header>
+    <div class="container" id="projects">
+        <!-- Project 1 -->
+        <div class="project-container">
+            <div class="project">
+                <div class="project-content">
+                    <div class="project-header">
+                        <h2>Predicting Student Writing Quality - Kaggle</h2>
+                        <img src="images/reading-book-blue.png" alt="Project 2 Image">
+                    </div>
+                </div>
+            </div>
+            <div class="tags-container">
+                <div class="tags">
+                    <div class="tag">Machine Learning</div>
+                    <div class="tag">Data Science</div>
+                    <div class="tag">Education</div>
+                </div>
+            </div>
+            <div class="project-text">
+            <div class="leaderboard"><p>Efficiency Prize Winner <br> <b style="font-size:30px; margin-bottom:-20px;">2nd Place</b>&nbsp;&nbsp;<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></p></div>
+            <p>In this competition funded by The Learning Agency Lab and Vanderbilt University, competitors must use written student summaries to predict both wording and content scores.
 				With models that can generalize well across prompts and grade levels (3-12), educators can leverage these predictions to augment their grading process and improve learning outcomes.
 				</p>
-				<a href="https://www.kaggle.com/competitions/commonlit-evaluate-student-summaries/discussion/447955" target="_blank" ontouchend="this.onclick=fix"><button class="button">View Solution</button></a><br><br>
-				<div class="leaderboard"><p>Efficiency Prize Winner <br> <b style="font-size:30px; margin-bottom:-20px;">2nd Place</b>&nbsp;&nbsp;<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></p></div>
-			</div>
-		</div>
-	</div>
-</div>
-<div id="container1" class="flex-container-dual">
-	<div id="linkbox1" class="article-dual">
-    <img class="back_img" src="images/vaccinations.png" width="200px" height="200px">
-		<div class="overlay">
-			<div class="text">
-				<h2>Predicting Vaccination Uptake</h2><div class="twinrow"><hr /></div>
-				<p>In this DrivenData competition, participants must create models to predict H1N1 and Seasonal Flu vaccinations.
-          With predictive insights, public heath agencies can better understand characteristics that influence vaccine uptake
-          and strategically improve response rates in future events.</p>
-				<a href="https://github.com/fitzpk/drivendata_repo" target="_blank" ontouchend="this.onclick=fix"><button class="button">View Project</button></a><br>
-      		</div><br>
-			<div class="leaderboard"><p>Leaderboard Rank <br> <b style="font-size:30px;">TOP 10</b>&nbsp;&nbsp;<span class="fa fa-star checked"></span></p></div>
-		</div>
-	</div>
-	<div id="linkbox2" class="article-dual">
-		<img class="back_img" src="images/alphabet.png" width="200px" height="200px">
-		<div class="overlay">
-			<div class="text">
-				<h2>Early Learning Predictors</h2><div class="twinrow"><hr /></div>
-				<p>In this Zindi competition, early learning assessments of South African children
+                <a href="https://www.kaggle.com/competitions/commonlit-evaluate-student-summaries/discussion/447955" target="_blank"><button class="button-50" role="button">READ MORE</button></a>
+            </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-container">
+            <div class="project">
+                <div class="project-content">
+                    <div class="project-header">
+                        <h2>Predicting Vaccination Uptake</h2>
+                        <img src="images/vaccine-blue.png" alt="Project 2 Image">
+                    </div>
+                </div>
+            </div>
+            <div class="tags-container">
+                <div class="tags">
+                    <div class="tag">Machine Learning</div>
+                    <div class="tag">Data Science</div>
+                    <div class="tag">Healthcare</div>
+                </div>
+            </div>
+            <div class="project-text">
+                <div class="leaderboard"><p>Leaderboard Rank <br> <b style="font-size:30px;">Top 10</b>&nbsp;&nbsp;<span class="fa fa-star checked"></span></p></div>
+                <p>In this DrivenData competition, participants must create models to predict H1N1 and Seasonal Flu vaccinations.
+                    With predictive insights, public heath agencies can better understand characteristics that influence vaccine uptake
+                    and strategically improve response rates in future events.</p>
+                <a href="https://github.com/fitzpk/drivendata_repo" target="_blank"><button class="button-50" role="button">READ MORE</button></a>
+            </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-container">
+            <div class="project">
+                <div class="project-content">
+                    <div class="project-header">
+                        <h2>Early Learning Predictors</h2>
+                        <img src="images/alphabet-blue.png" alt="Project 2 Image">
+                    </div>
+                </div>
+            </div>
+            <div class="tags-container">
+                <div class="tags">
+                    <div class="tag">Machine Learning</div>
+                    <div class="tag">Data Science</div>
+                    <div class="tag">Education</div>
+                </div>
+            </div>
+            <div class="project-text">
+                <div class="leaderboard"><p>Leaderboard Rank <br> <b style="font-size:30px;">11th</b>&nbsp;&nbsp;<span class="fa fa-star checked"></span></p></div>
+                <p>In this Zindi competition, early learning assessments of South African children
 					are used to predict early learning scores and identify elements of successful early learning programmes. With these models and
 				their predictive insights, South Africa can greatly improve EL programmes and the developmental outcomes of generations to come.
 				</p>
-				<a href="https://github.com/fitzpk/zindi_repo" target="_blank" ontouchend="this.onclick=fix"><button class="button">View Project</button></a>
-				
-			</div>
-			<div class="leaderboard"><p>Leaderboard Rank <br> <b style="font-size:30px;">11th</b>&nbsp;&nbsp;<span class="fa fa-star checked"></span></p></div>
-		</div>
-	</div>
-</div>
-
-<div id="container1" class="flex-container-dual">
-	<div id="linkbox3" class="article-dual">
-		<img class="back_img" src="images/coding.png" width="200px" height="200px">
-		<div class="overlay">
-			<div class="text">
-				<h2>Web Scraping with Selenium</h2><div class="twinrow"><hr /></div>
+                <a href="https://github.com/fitzpk/zindi_repo" target="_blank"><button class="button-50" role="button">READ MORE</button></a>
+            </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="project-container">
+            <div class="project">
+                <div class="project-content">
+                    <div class="project-header">
+                        <h2>Web Scraping with Selenium</h2>
+                        <img src="images/web-scraping-blue.png" alt="Project 2 Image">
+                    </div>
+                </div>
+            </div>
+            <div class="tags-container">
+                <div class="tags">
+                    <div class="tag">Data Engineering</div>
+                </div>
+            </div>
+            <div class="project-text">
 				<p>Through the utilization of the Selenium library, these python scripts enable the user to interact with data sources such as
 					NSERC's research awards database and Shanghai Ranking's online tables, and ultimately extract detailed data that is otherwise not exportable.</p>
-				<a href="https://github.com/fitzpk/Web-Scraping" target="_blank" ontouchend="this.onclick=fix"><button class="button">View Project</button></a><br><br>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div id="container2" class="flex-container-dual">
-	<div id="linkbox4" class="article-dual">
-    <img class="back_img" src="images/recorder-player.png" width="200px" height="200px">
-    <div class="overlay">
-      <div class="text">
-        <h2>Song Recommendation Engine</h2><div class="twinrow"><hr /></div>
-        <p>An item-content similarity recommendation engine constructed using more than 10,000 songs and
-          the Turicreate library in Python. By extracting and comparing audio metrics from songs, similar items are recommended to
-          users based on their most recent playlist.
-        </p>
-        <a href="https://github.com/fitzpk/SongRecommendationEngine" target="_blank" ontouchend="this.onclick=fix"><button class="button">View Project</button></a><br><br>
-      </div>
+                    <a href="https://github.com/fitzpk/Web-Scraping" target="_blank"><button class="button-50" role="button">READ MORE</button></a>
+            </div>
+        </div>
+        <!-- Project 5 -->
+        <div class="project-container">
+            <div class="project">
+                <div class="project-content">
+                    <div class="project-header">
+                        <h2>Visualizing A History of NHL Trades</h2>
+                        <img src="images/hockey-red.png" alt="Project 2 Image">
+                    </div>
+                </div>
+            </div>
+            <div class="tags-container">
+                <div class="tags">
+                    <div class="tag">Data Visualization</div>
+                    <div class="tag">Dashboards</div>
+                    <div class="tag">Tableau</div>
+                </div>
+            </div>
+            <div class="project-text">
+				<p>Through the utilization of the Selenium library, these python scripts enable the user to interact with data sources such as
+					NSERC's research awards database and Shanghai Ranking's online tables, and ultimately extract detailed data that is otherwise not exportable.</p>
+                    <a href="https://public.tableau.com/views/NHLTrades/Dashboard?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank"><button class="button-50" role="button">READ MORE</button></a>
+            </div>
+        </div>        
+        <!-- Project 5 -->
+        <div class="project-container">
+            <div class="project">
+                <div class="project-content">
+                    <div class="project-header">
+                        <h2>AmCharts and Web-Based Visualizations</h2>
+                        <img src="images/data-analysis-3d-red.png" alt="Project 2 Image">
+                    </div>
+                </div>
+            </div>
+            <div class="tags-container">
+                <div class="tags">
+                    <div class="tag">Data Visualization</div>
+                    <div class="tag">Javascript</div>
+                    <div class="tag">Python</div>
+                </div>
+            </div>
+            <div class="project-text">
+				<p>Through the utilization of the Selenium library, these python scripts enable the user to interact with data sources such as
+					NSERC's research awards database and Shanghai Ranking's online tables, and ultimately extract detailed data that is otherwise not exportable.</p>
+                    <a href="https://github.com/fitzpk/visual-city-limits" target="_blank"><button class="button-50" role="button">READ MORE</button></a>
+            </div>
+        </div>
+        <!-- Add more project containers as needed -->
     </div>
-	</div>
 
-  <div id="linkbox5" class="article-dual">
-    <img class="back_img" src="images/golf.png" width="200px" height="200px">
-    <div class="overlay">
-      <div class="text">
-        <h2>Predicting Golf Course Turf Species</h2><div class="twinrow"><hr /></div>
-        <p>Using a multi-output classification model, this project predicts the turf species of golf course greens and fairways.
-        From web scraping data to creating a hyper-tuned model, this project was completed almost entirely in Python.</p>
-        <a href="https://www.dropbox.com/s/k1yzcgyu5180fpx/Predictive%20Turf%20Management%20-%20Report.pdf?dl=0" target="_blank" ontouchend="this.onclick=fix"><button class="button">View Report</button></a><br><br>
-        <a href="https://github.com/fitzpk/TurfSpeciesPredictiveModeling" target="_blank" ontouchend="this.onclick=fix"><button class="button">View Code</button></a>
-      </div>
-    </div>
-  </div>
-</div>
+    <script>
+        // Get all navigation links
+        const navLinks = document.querySelectorAll('nav a');
 
-
-<div class="project-category"><p>data visualization</p></div>
-<div class="project-types"><p>Python Graphics  &nbsp; &#x2022;  &nbsp; Dashing Dashboards</p></div>
-<div id="container3" class="flex-container-dual">
-	<br>
-	<div id="linkbox6" class="article-dual">
-		<img class="back_img" src="images/mona-lisa.png" width="200px" height="200px">
-		<div class="overlay">
-			<div class="text">
-				<h2>Gallery of Python, Javascript, & Tableau Visuals</h2><div class="twinrow"><hr /></div>
-				<p>An assorted curation of custom python graphics, javascript web visuals, and Tableau dashboards.
-				</p>
-				<a href="https://github.com/fitzpk/visual-city-limits" target="_blank" ontouchend="this.onclick=fix"><button class="button">View Project</button></a>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-
-<div class="project-category"><p>geographic information systems</p></div>
-<div class="project-types"><p>Community Mapping  &nbsp; &#x2022;  &nbsp; Spatial Analysis</p></div>
-<div id="container4" class="flex-container-dual">
-	<br>
-	<div id="linkbox7" class="article-dual">
-		<img class="back_img" src="images/shopcolour.png" width="200px" height="200px">
-		<div class="overlay">
-			<div class="text">
-				<h2>Local Business Analysis Application</h2><div class="twinrow"><hr /></div>
-				<p>Online map, driven by the JavaScript-based Leaflet API, that serves as a resource for community members
-				to identify local businesses, assess competition, and analyze the spatial distribution within their town or city.
-				</p>
-				<a href="https://fitzpk.github.io/AncasterApp.github.io/" target="_blank" ontouchend="this.onclick=fix"><button class="button">View Project</button></a><br><br>
-				<a href="https://www.dropbox.com/s/2g6c7vfn5hzzyx9/AncasterUsersManual.pdf?dl=0" target="_blank" ontouchend="this.onclick=fix"><button class="button">Learn More</button></a>
-			</div>
-		</div>
-	</div>
-	<div id="linkbox8" class="article-dual">
-		<img class="back_img" src="images/mapcolour.png" width="200px" height="200px">
-		<div class="overlay">
-			<div class="text">
-				<h2>Canadian Diabetes Association - Routing System</h2><div class="twinrow"><hr /></div>
-				<p>Constructed using ESRI App Builder, this GIS application provides routing analysis and optimal route
-				plans for vehicle fleets sent out by the CDA to collect donations at their designated boxes.</p>
-				<a href="https://fitzkp.maps.arcgis.com/apps/webappviewer/index.html?id=f7d33954ac334b1da73ff98ecb643887" target="_blank" ontouchend="this.onclick=fix"><button class="button">View Project</button></a><br><br>
-				<a href="https://www.dropbox.com/s/w2j5o59l2vlk2ap/CDA_UsersManual.pdf?dl=0" target="_blank" ontouchend="this.onclick=fix"><button class="button">Learn More</button></a>
-			</div>
-		</div>
-	</div>
-</div>
-<div id="container5" class="flex-container-dual">
-	<div id="linkbox9" class="article-dual">
-		<img class="back_img" src="images/twitter.png" width="200px" height="200px">
-		<div class="overlay">
-			<div class="text">
-				<h2>Live GeoTwitter App</h2><div class="twinrow"><hr /></div>
-				<p>This product uses the Tweepy Python module to stream tweets, export them to a JSON file, and manipulate them into GeoJSON data.
-				Data is then pushed to Github in timed intervals, where it is made available in a custom web map constructed using Leaflet, JavaScript, and jQuery.</p>
-				<a href="https://github.com/fitzpk/Tweets-on-a-Map" target="_blank" ontouchend="this.onclick=fix"><button class="button">View Project</button></a>
-			</div>
-		</div>
-	</div>
-</div>
-
+        // Add event listener to each link
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                // Remove 'selected' class from all links
+                navLinks.forEach(link => link.classList.remove('selected'));
+                
+                // Add 'selected' class to clicked link
+                this.classList.add('selected');
+            });
+        });
+    </script>
 </body>
 </html>
+
